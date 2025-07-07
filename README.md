@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Codeforces Practice Problems 🚀
 
 Welcome to the **Codeforces Practice Problems** repository! This repo is a collection of solutions and explanations for various challenges provided by Codeforces. Perfect for improving problem-solving skills and preparing for competitive programming contests. 💡
@@ -16,3 +17,7 @@ This repository features:
 ---
 
 ## 🚀 Getting Started
+=======
+# Code-Forces
+My daily self practice question in codeforces
+>>>>>>> 555a4d8 (Initial commit)
