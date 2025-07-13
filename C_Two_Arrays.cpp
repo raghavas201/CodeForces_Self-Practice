@@ -67,22 +67,25 @@ vector<ll> sieve(int n) { vector<ll> primes; vector<bool> isPrime(n+1, true); fo
 ll getRandomNumber(ll l, ll r) { return uniform_int_distribution<ll>(l, r)(rng); }
 void inc(vector<ll>& a) { sort(all(a)); }
 
-void solve() {
-    int n;
-    cin >> n;
-    int ans = INT_MAX;
-    for (int i = 0; i < n; i++) {
-        int x;
-        cin >> x;
-        ans = min(ans, abs(x));
+void solve(){
+    int n;cin>>n;
+    vector<int>a(n),b(n);
+    for(int i=0;i<n;i++)cin>>a[i];
+    for(int i=0;i<n;i++)cin>>b[i];
+    sort(all(a));
+    sort(all(b));
+    bool ok=true;
+    for(int i=0;i<n;i++){
+        int d=b[i]-a[i];
+        if(d<0||d>1){ok=false;break;}
     }
-    cout << ans << nline;
+    cout<<(ok?"YES":"NO")<<nline;
 }
 
 int main() {
     fastio();
-    int t = 1;
-    // cin >> t;
+    int t;
+    cin >> t;
     while (t--) {
         solve();
     }
