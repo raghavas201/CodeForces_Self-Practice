@@ -3,6 +3,7 @@
         "*.java": "java",
         "iostream": "cpp",
         "ios": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "set": "cpp"
     }
 }
